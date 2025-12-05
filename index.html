@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyingSquirrels December Challenge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* gray-100 */
+        }
+        
+        /* Custom scrollbar */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #9ca3af;
+            border-radius: 10px;
+        }
+
+        /* "Doto" style H1 */
+        .doto-style-h1 {
+            font-weight: 900;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            line-height: 1;
+        }
+        
+        /* Adjust font size responsively for the massive title */
+        @media (min-width: 768px) {
+            .doto-style-h1 {
+                font-size: 3.5rem;
+                letter-spacing: 0.2em;
+            }
+        }
+        @media (max-width: 767px) {
+            .doto-style-h1 {
+                font-size: 2rem;
+                letter-spacing: 0.05em;
+            }
+        }
+
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(-5%); }
+            50% { transform: translateY(5%); }
+        }
+        .animate-bounce-slow {
+            animation: bounce-slow 2s infinite ease-in-out;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
